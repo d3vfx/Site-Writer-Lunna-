@@ -4,27 +4,28 @@ body {
 }
 
 .grid-contos {
-  display: flex; /* Mantém o flex para centralizar */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens se ajustem conforme o tamanho da tela */
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   padding: 20px;
 }
 
 .conto {
   border: 2px solid #9D5EFF;
-  border-radius: 10px; 
+  border-radius: 10px;
   padding: 10px;
   text-align: center;
-  width: 200px; /* Define a largura do conto */
-  margin: auto; /* Centraliza o .conto se ele for menor que o espaço disponível */
+  width: 100%; /* Ajusta a largura para ser 100% em telas pequenas */
+  margin: auto;
 }
 
 .conto img {
-  width: 100%; /* Ajusta a imagem para preencher a largura do .conto */
-  height: auto; /* Mantém a proporção da imagem */
-  display: block; /* Remove o espaço extra sob a imagem */
-  margin-bottom: 10px; /* Espaço entre a imagem e o título */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .nome-conto {
@@ -35,4 +36,15 @@ body {
 
 h3 {
   color: #DBCDFF;
+}
+
+/* Media query para telas menores que 600px */
+@media (max-width: 600px) {
+  .grid-contos {
+    flex-direction: column; /* Empilha os itens verticalmente em telas pequenas */
+  }
+
+  .conto {
+    width: 90%; /* Reduz a largura para dar espaço às bordas */
+  }
 }
