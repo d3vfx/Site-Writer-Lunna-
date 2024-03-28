@@ -1,0 +1,38 @@
+body {
+  background-color: #050119;
+  font-family: Arial, sans-serif;
+}
+
+.grid-contos {
+  display: flex; /* Mantém o flex para centralizar */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 20px;
+  padding: 20px;
+}
+
+.conto {
+  border: 2px solid #9D5EFF;
+  border-radius: 10px; 
+  padding: 10px;
+  text-align: center;
+  width: 200px; /* Define a largura do conto */
+  margin: auto; /* Centraliza o .conto se ele for menor que o espaço disponível */
+}
+
+.conto img {
+  width: 100%; /* Ajusta a imagem para preencher a largura do .conto */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove o espaço extra sob a imagem */
+  margin-bottom: 10px; /* Espaço entre a imagem e o título */
+}
+
+.nome-conto {
+  display: block;
+  margin-top: 10px;
+  color: #DBCDFF;
+}
+
+h3 {
+  color: #DBCDFF;
+}
