@@ -145,7 +145,7 @@ h3{
   display: block; /* Isso garante que o span se comporte como um bloco */
   width: 100%; /* Garante que o nome ocupe toda a largura da capa */
   text-align: center; /* Centraliza o texto */
-  color: white; /* Texto branco */
+  color: #DBCDFF; /* Texto branco */
   padding: 5px 0; /* Espaçamento superior e inferior */
   margin-top: 5px; /* Espaçamento entre a capa e o título */
   font-size: 18px;
