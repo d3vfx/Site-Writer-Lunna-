@@ -89,12 +89,13 @@ h3{
 
 
 #searchInput {
-  border: none;
+  border:none;
+  outline: none;
   background: transparent;
   padding: 5px 10px;
   color:#DBCDFF;
   /*background-color: #8C70FB;*/
-  border-radius: 50px; /* Bordas arredondadas */
+  /*border-radius: 50px; /*Bordas arredondadas */
   padding: 5px 10px;
   width: 400px;
   height: 20px;
@@ -120,23 +121,22 @@ h3{
 
 /*grid home*/
 
-.grid-contos{
+.grid-contos {
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
   padding: 15px;
-  height:250px;
 }
 
 .conto {
   min-width: 160px; /* Ou a largura que você preferir */
-  margin: 5px;
-  position: relative; /* Para posicionar o nome sobre a imagem, se necessário */
-  /*flex-shrink: 0; Previne o encolhimento dos itens na flexbox */
+  margin: 10px;
 }
 
 .conto img {
   width: 100%; /* Faz a imagem preencher o container */
+  height: 220px; /* Altura fixa para todas as imagens */
+  object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem distorcer */
   border-radius: 5px; /* Bordas arredondadas para as imagens */
   display: block; /* Garante que a imagem não tenha espaço extra embaixo */
 }
@@ -145,21 +145,17 @@ h3{
   display: block; /* Isso garante que o span se comporte como um bloco */
   width: 100%; /* Garante que o nome ocupe toda a largura da capa */
   text-align: center; /* Centraliza o texto */
-  background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
   color: white; /* Texto branco */
   padding: 5px 0; /* Espaçamento superior e inferior */
-  position: absolute; /* Posiciona absolutamente dentro do .filme */
-  bottom: 0; /* Alinha na parte inferior do .filme */
-  left: 0; /* Alinha à esquerda do .filme */
+  margin-top: 5px; /* Espaçamento entre a capa e o título */
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .rating {
   display: block; /* Transforma o span em um bloco para permitir o posicionamento correto */
   text-align: center; /* Centraliza as estrelas */
   width: 100%; /* Garante que as estrelas ocupem toda a largura do container */
-  position: absolute; /* Posiciona absolutamente dentro do .filme */
-  bottom: -25px; /* Ajuste este valor conforme necessário para posicionar abaixo da capa */
-  left: 0; /* Alinha à esquerda do .filme */
   color: gold; /* Cor das estrelas */
   font-size: 20px; /* Tamanho das estrelas */
 }
