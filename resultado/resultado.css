@@ -5,31 +5,30 @@ body {
 
 .grid-contos {
   display: flex;
-  flex-wrap: wrap; /* Permite que os itens se ajustem conforme o tamanho da tela */
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
+  overflow-x: scroll;
+  overflow-y:hidden;
+  padding: 15px;
+  height:250px;
 }
 
 .conto {
+  max-height: 100%;
   border: 2px solid #9D5EFF;
   border-radius: 10px;
   padding: 10px;
-  text-align: center;
-  width: 100%; /* Ajusta a largura para ser 100% em telas pequenas */
-  margin: auto;
+  max-width: 160px; /* Ou a largura que você preferir */
+  margin: 5px;
+  position: relative;
 }
 
 .conto img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
+  width: 100%; /* Faz a imagem preencher o container */
+  border-radius: 5px; /* Bordas arredondadas para as imagens */
+  max-height: 100%;
+  display: block; 
 }
 
 .nome-conto {
-  display: block;
   margin-top: 10px;
   color: #DBCDFF;
 }
