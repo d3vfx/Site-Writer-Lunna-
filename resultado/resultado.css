@@ -8,7 +8,7 @@ body {
   overflow-x: scroll;
   overflow-y:hidden;
   padding: 15px;
-  height:250px;
+  height:auto;
 }
 
 .conto {
