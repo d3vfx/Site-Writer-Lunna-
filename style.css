@@ -125,7 +125,7 @@ h3{
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding: 15px;
+  padding: 0px;
 }
 
 .conto {
