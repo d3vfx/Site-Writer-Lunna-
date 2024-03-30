@@ -1,0 +1,23 @@
+*{
+  padding: 0;
+  margin:0;
+}
+
+body{
+  color:#D2D2FF;
+  background-color:#050119;
+}
+
+nav{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.shotnote{
+  padding: 20px;
+  margin: 10px;
+  background-color:#4600FF69;
+  border:3px solid #8500FF;
+  border-radius: 10px;
+}
