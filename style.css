@@ -145,7 +145,7 @@ h3{
   display: block; /* Isso garante que o span se comporte como um bloco */
   width: 100%; /* Garante que o nome ocupe toda a largura da capa */
   text-align: center; /* Centraliza o texto */
-  color: #DBCDFF; /* Texto branco */
+  color: white; /* Texto branco */
   padding: 5px 0; /* Espaçamento superior e inferior */
   margin-top: 5px; /* Espaçamento entre a capa e o título */
   font-size: 18px;
@@ -158,4 +158,48 @@ h3{
   width: 100%; /* Garante que as estrelas ocupem toda a largura do container */
   color: gold; /* Cor das estrelas */
   font-size: 20px; /* Tamanho das estrelas */
+}
+
+/*dialog*/
+/* CSS (estilo.css) */
+.dialog {
+  display: none; /* Escondido por padrão */
+  position: fixed; /* Fica fixo na tela */
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 30px); /* Subtrai as margens das larguras total */
+  max-width: 1000px; /* Máximo de largura do conteúdo */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+  background: rgba(0, 0, 0, 0.49); /* Fundo preto transparente */
+  z-index: 1; /* Fica no topo */
+  padding: 0 15px; /* Adiciona padding para não colar no conteúdo */
+}
+.dialog-content p{
+  margin-top: 5px;
+}
+.dialog-content {
+  background-color: rgba(0, 0, 0, 0.49);
+  padding: 20px;
+  border: 2px solid #7900FF;
+  border-radius: 10px;
+  position: relative; /* Para posicionar corretamente o botão de fechar */
+}
+
+.close-button {
+  color: #EFD7FF;
+  font-size: 42px; /* Tamanho maior para o 'X' */
+  font-weight: bold;
+  position: absolute;
+  right: 15px; /* Posição do 'X' no canto superior direito */
+  top: 10px;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
 }
