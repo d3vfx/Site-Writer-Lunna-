@@ -41,3 +41,25 @@ document.getElementById('searchInput').addEventListener('keypress', function(e) 
 });
 
 // Certifique-se de que o elemento com ID 'resultadosPesquisa' exista na sua página index.html
+// JavaScript (script.js)
+var dialog = document.getElementById('meuDialog');
+var closeButton = document.getElementsByClassName('close-button')[0];
+
+// Quando o usuário clica no botão "X", fecha o dialog e salva no sessionStorage
+closeButton.onclick = function() {
+  dialog.style.display = "none";
+  sessionStorage.setItem('dialogFechado', 'true');
+}
+
+// Função para abrir o dialog
+function showDialog() {
+  // Verifica se o dialog já foi fechado na sessão atual
+  if(!sessionStorage.getItem('dialogFechado')) {
+    dialog.style.display = "block";
+  }
+}
+
+// Evento que aciona a função showDialog assim que a página carrega
+document.addEventListener('DOMContentLoaded', function() {
+  showDialog();
+});
