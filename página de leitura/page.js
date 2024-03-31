@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     'retornogrob': {
       titulo: 'O Retorno de Grob',
-      descricao: '1BgBMkbpfoaMa9ig1lbul6IVNmG7uqJpHSP5HUj8rqgs',
+      descricao: '1DcM3ObgG8dgXZeFoAszZbit3M0dkw_JR',
       corBorda: '#90FF98'
     },
     'euescolhiesperar': {
