@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         texto.innerHTML = 'O Retorno de Grob (+12)';
         autor.innerHTML = 'Sartius';
         genero.innerHTML = 'Fantasia🧙‍♂️; Terror☠️';
-        sinopse.innerHTML = 'Conto de: Sartius; <br> Campeão do Evento de Natal da Novel Brasil em 2023';
+        sinopse.innerHTML = 'Três crianças, Denis, Lisa e Fábio, vão passar as férias na fazenda Elvas, junto de seu tio, Lúcio. Depois de testemunhar hábitos estranhos de Lúcio, os três são tentados a explorar o que há escondido no antigo porão da casa, onde acabam encontrando uma grande ameaça a qual são incapazes de resolver.';
         document.title = 'Writer Lunna – leia: O Retorno de Grob';
       } else if (conteudo === 'euescolhiesperar') {
         imagem.src = 'https://i.postimg.cc/x8WFpZ8B/escolhiesperar-20240327043300.png';
