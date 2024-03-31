@@ -22,7 +22,7 @@ nav img{
   width: 50px;
 }
 .container{
-  padding: 16px;
+  padding: 10px;
 }
 
 nav h1{
@@ -41,8 +41,9 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 15px;
-  width: 90vmin;
+  width: 100%;
   position: relative;
   /*transform: translate(-50%, -50%);
   top: 50%;
