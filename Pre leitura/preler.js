@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         texto.innerHTML = 'O Retorno de Grob (+12)';
         autor.innerHTML = 'Sartius';
         genero.innerHTML = 'Fantasia🧙‍♂️; Terror☠️';
-        sinopse.innerHTML = 'Um advogado falido, um crime sem culpado e uma depressão profunda. No primeiro volume de "O Caso da Rua Pascoal", acompanhamos o início da jornada do Dr. Marcus em busca de provar sua inocência (ou não).';
+        sinopse.innerHTML = 'Conto de: Sartius; <br> Campeão do Evento de Natal da Novel Brasil em 2023';
         document.title = 'Writer Lunna – leia: O Retorno de Grob';
       } else if (conteudo === 'euescolhiesperar') {
         imagem.src = 'https://i.postimg.cc/x8WFpZ8B/escolhiesperar-20240327043300.png';
